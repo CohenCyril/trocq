@@ -39,8 +39,14 @@ description: |-
 publications:
 - pub_url: https://hal.science/hal-04177913/document
   pub_title: 'Trocq: Proof Transfer for Free, With or Without Univalence'
+- pub_url: https://hal.science/hal-04623207/document
+  pub_title: 'Artifact Report: Trocq: Proof Transfer for Free, With or Without Univalence'
+- pub_url: https://hal.science/hal-05192017/document
+  pub_title: 'Trocq: Proof Transfer for Free, Beyond Equivalence and Univalence'
 
 authors:
+- name: Samy Avrillon 
+  initial: false
 - name: Cyril Cohen
   initial: true
 - name: Enzo Crance
@@ -51,6 +57,8 @@ authors:
   initial: true
 
 maintainers:
+- name: Samy Avrillon 
+  nickname: MysaaJava
 - name: Cyril Cohen
   nickname: CohenCyril
 - name: Enzo Crance
@@ -70,15 +78,15 @@ license:
   file: LICENSE
 
 supported_coq_versions:
-  text: "8.20, 9.0 and 9.1"
-  opam: '{>= "8.20" & < "9.2"}'
+  text: "9.0 and 9.1"
+  opam: '{>= "9.0" & < "9.2"}'
 
 make_target: "std"
 
 install_flag: "-C std"
 
 tested_coq_opam_versions:
-- version: '8.20, 9.0, 9.1'
+- version: '9.0, 9.1'
 
 dependencies:
 - opam:

@@ -14,22 +14,32 @@
       trocq-hott.main-job = true;
     };
   in {
-    "coq-8.20".coqPackages = common-bundles // {
-      coq.override.version = "8.20";
+    "rocq-9.0" = {
+      rocqPackages = { rocq-core.override.version = "9.0"; };
+      coqPackages = common-bundles // { coq.override.version = "9.0"; };
     };
-    "rocq-9.0" = { rocqPackages = {
-      rocq-core.override.version = "9.0";
-    }; coqPackages = common-bundles // {
-      coq.override.version = "9.0";
-    }; };
-    "rocq-9.1" = { rocqPackages = {
-      rocq-core.override.version = "9.1";
-    }; coqPackages = common-bundles // {
-      coq-elpi.override.elpi-version = "3.4.2";
-      coq.override.version = "9.1";
-      trocq-hott.job = false;  # HoTT isn't available yet for 9.1
-      trocq.job = false;  # depends on trocq-hott
-    }; };
+    "rocq-9.1" = {
+      rocqPackages = { rocq-core.override.version = "9.1"; };
+      coqPackages = common-bundles // {
+        coq-elpi.override.elpi-version = "3.4.2";
+        coq.override.version = "9.1";
+        HoTT.override.version = "master"; # HoTT isn't available yet for 9.1
+      };
+    };
+    ## Trocq is broken on Rocq-master
+    # "rocq-master" = {
+    #   rocqPackages = {
+    #     rocq-core.override.version = "master";
+    #   };
+    #   coqPackages = common-bundles // {
+    #     coq-elpi.override.elpi-version = "3.4.2";
+    #     coq-elpi.override.version = "master";
+    #     coq.override.version = "master";
+    #     trocq-hott.job = false; # HoTT isn't available yet for 9.1
+    #     trocq-hott-examples.job = false; # HoTT isn't available yet for 9.1
+    #     trocq.job = false; # depends on trocq-hott
+    #   };
+    # };
   };
 
   cachix.coq = { };

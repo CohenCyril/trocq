@@ -152,8 +152,8 @@ set p1 := ap f _. set p2 := comapK _ _.
 rewrite eq_trans_sym_distr.
 rewrite -2!ap_V inv_V -ap_pp -ap_compose.
 set i := (X in ap X _).
-rewrite concat_A1p.
-by rewrite -concat_pp_p concat_pV concat_1p concat_Vp.
+rewrite concat_A1p -/p2.
+by rewrite -[p2 @ _]concat_pp_p concat_pV concat_1p concat_Vp.
 Defined.
 
 Definition toParam@{} : Param44.Rel@{i} A B :=

@@ -51,22 +51,26 @@ sequent-style presentation.
 ## Meta
 
 - Author(s):
+  - Samy Avrillon
   - Cyril Cohen (initial)
   - Enzo Crance (initial)
   - Lucie Lahaye
   - Assia Mahboubi (initial)
-- Coq-community maintainer(s):
+- Rocq-community maintainer(s):
+  - Samy Avrillon ([**@MysaaJava**](https://github.com/MysaaJava))
   - Cyril Cohen ([**@CohenCyril**](https://github.com/CohenCyril))
   - Enzo Crance ([**@ecranceMERCE**](https://github.com/ecranceMERCE))
   - Lucie Lahaye ([**@lweqx**](https://github.com/lweqx))
   - Assia Mahboubi ([**@amahboubi**](https://github.com/amahboubi))
 - License: [GNU Lesser General Public License v3.0](LICENSE)
-- Compatible Coq versions: 8.20, 9.0 and 9.1
+- Compatible Rocq/Coq versions: 9.0 and 9.1
 - Additional dependencies:
   - [Coq-Elpi](https://github.com/LPCIC/coq-elpi)
-- Coq namespace: `Trocq`
+- Rocq/Coq namespace: `Trocq`
 - Related publication(s):
   - [Trocq: Proof Transfer for Free, With or Without Univalence](https://hal.science/hal-04177913/document) 
+  - [Artifact Report: Trocq: Proof Transfer for Free, With or Without Univalence](https://hal.science/hal-04623207/document) 
+  - [Trocq: Proof Transfer for Free, Beyond Equivalence and Univalence](https://hal.science/hal-05192017/document) 
 
 ## Building and installation instructions
 
