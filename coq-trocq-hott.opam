@@ -2,7 +2,7 @@
 # Follow the instructions on https://github.com/coq-community/templates to regenerate.
 
 opam-version: "2.0"
-maintainer: "Enzo Crance <enzo.crance@inria.fr>"
+maintainer: "Cyril Cohen <cyril.cohen@inria.fr>"
 version: "dev"
 
 homepage: "https://github.com/coq-community/trocq"
@@ -56,9 +56,12 @@ tags: [
   "keyword:parametricity"
   "logpath:Trocq"
 ]
+
 authors: [
+  "Samy Avrillon"
   "Cyril Cohen"
   "Enzo Crance"
   "Lucie Lahaye"
   "Assia Mahboubi"
+  "Tomas Vallejos"
 ]
